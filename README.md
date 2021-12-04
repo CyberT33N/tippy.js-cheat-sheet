@@ -92,7 +92,22 @@ const tip = tippy('.finder', {
 
 <br><br><br><br>
 
-## trigger
+## available trigger
+
+```javascript
+{
+  // default
+  trigger: 'mouseenter focus',
+  
+  // others:
+  trigger: 'click',
+  trigger: 'focusin',
+  trigger: 'mouseenter click',
+  
+  // only programmatically trigger it
+  trigger: 'manual',
+}
+```
 
 ### Hide tooltip only via click - trigger click
 ```javascript
