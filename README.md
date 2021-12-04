@@ -36,6 +36,19 @@ Tippy.js Cheat Sheet
 ```javascript
 // Method #1 - Tooltip still active via hover 
 const tip = tippy('.finder', {
+  content: 'My tooltip!'
+})
+
+setTimeout(() => {
+  // - I do not know why but with Tippy 6 the variable assignment of tippy() gets into an array. So we must use tip[0]
+  tip[0].show()
+}, 2000)
+
+
+
+
+// Method #2 - Tooltip still active via hover 
+const tip = tippy('.finder', {
     content: 'My tooltip!',
     showOnCreate: true
 })
@@ -46,13 +59,14 @@ const tip = tippy('.finder', {
 
 ## Hide tooltip programmatically
 ```javascript
-// Method #1 - I do not know why but with Tippy 6 the variable assignment of tippy() gets into an array. So we must use tip[0]
+// Method #1
   const tip = tippy('.finder', {
     content: 'My tooltip!',
     showOnCreate: true
   })
 
   setTimeout(() => {
+  // - I do not know why but with Tippy 6 the variable assignment of tippy() gets into an array. So we must use tip[0]
     tip[0].disable()
   }, 2000)
 ```
