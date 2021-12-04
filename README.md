@@ -15,6 +15,7 @@ Tippy.js Cheat Sheet
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
   </head>
   <body>
     <button id="myButton">My button</button>
@@ -165,6 +166,11 @@ const tip = tippy('.finder', {
 
 
 ## Animate Fade-in & Fade-out
+```html
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+```
+
 ```javascript
 const tip = tippy('.finder', {
   content: 'My tooltip!',
