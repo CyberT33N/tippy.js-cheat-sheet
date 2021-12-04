@@ -90,6 +90,22 @@ const tip = tippy('.finder', {
 
 
 
+<br><br><br><br>
+
+## trigger
+
+### Hide tooltip only via click - trigger click
+```javascript
+const tip = tippy('.finder', {
+  content: 'My tooltip!',
+  theme: 'light-border',
+  animation: 'scale',
+  duration: 1000,
+  trigger: 'click'
+})
+```
+
+
 
 
 
