@@ -9,6 +9,12 @@ Tippy.js Cheat Sheet
 <html>
   <head>
     <title>Tippy</title>
+    
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
   </head>
   <body>
     <button id="myButton">My button</button>
@@ -39,7 +45,11 @@ const tip = tippy('.finder', {
   content: 'My tooltip!'
 })
 
-setTimeout(() => {
+setTimeout(() => {  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
   // - I do not know why but with Tippy 6 the variable assignment of tippy() gets into an array. So we must use tip[0]
   tip[0].show()
 }, 2000)
@@ -70,3 +80,61 @@ const tip = tippy('.finder', {
     tip[0].disable()
   }, 2000)
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________
+____________________________________________________
+<br><br>
+
+
+## Themes
+
+## Enable
+```html
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
+```
+
+
+<br><br>
+
+## Usage
+```javascript
+  const tip = tippy('.finder', {
+    content: 'My tooltip!',
+    theme: 'light'
+  })
+```
+
+<br><br>
+
