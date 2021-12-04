@@ -11,11 +11,16 @@ Tippy.js Cheat Sheet
     <title>Tippy</title>
     
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
+    
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css" />
+    
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
   </head>
   <body>
     <button id="myButton">My button</button>
@@ -155,7 +160,7 @@ ____________________________________________________
 
 # Plugins
 
-## Follow Cursor
+## followCursor
 ```javascript
 const tip = tippy('.finder', {
   content: 'My tooltip!',
@@ -163,9 +168,9 @@ const tip = tippy('.finder', {
 })
 ```
 
+<br><br>
 
-
-## Animate Fade-in & Fade-out
+## animateFill (Animate Fade-in & Fade-out)
 ```html
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/backdrop.css" />
   <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
@@ -179,4 +184,59 @@ const tip = tippy('.finder', {
 })
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________
+____________________________________________________
+<br><br>
+
+
+# Animate
+- Options are: shift-away, scale, perspective, shift-towards
+
+## followCursor
+```html
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective.css" />
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
+```
+
+```javascript
+const tip = tippy('.finder', {
+  content: 'My tooltip!',
+  animation: 'scale'
+})
+```
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/perspective.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-toward.css" />
 
