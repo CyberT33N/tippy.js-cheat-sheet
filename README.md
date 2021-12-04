@@ -114,7 +114,7 @@ ____________________________________________________
 <br><br>
 
 
-## Themes
+# Themes
 
 ## Enable
 ```html
@@ -137,4 +137,40 @@ ____________________________________________________
 ```
 
 <br><br>
+
+
+
+
+
+
+
+
+
+<br><br>
+____________________________________________________
+____________________________________________________
+<br><br>
+
+
+# Plugins
+
+## Follow Cursor
+```javascript
+const tip = tippy('.finder', {
+  content: 'My tooltip!',
+  followCursor: true
+})
+```
+
+
+
+## Animate Fade-in & Fade-out
+```javascript
+const tip = tippy('.finder', {
+  content: 'My tooltip!',
+  theme: 'light-border',
+  animateFill: true
+})
+```
+
 
