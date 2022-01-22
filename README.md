@@ -109,6 +109,9 @@ const tip = tippy('.finder', {
 }
 ```
 
+
+<br><br>
+
 ### Hide tooltip only via click - trigger click
 ```javascript
 const tip = tippy('.finder', {
@@ -122,7 +125,18 @@ const tip = tippy('.finder', {
 
 
 
+<br><br>
 
+### Change tooltip position
+```javascript
+const tip = tippy(querySelector, {
+    content: e,
+    theme: 'light-border',
+    animation: 'scale',
+    trigger: 'manual',
+    placement: 'bottom'
+})
+```
 
 
 
